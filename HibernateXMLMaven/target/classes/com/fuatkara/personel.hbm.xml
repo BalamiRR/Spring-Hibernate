@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+    
+    <hibernate-mapping> 
+    <class name="com.fuatkara.Personel" table="FUATTT">
+    
+    	<!-- id'nin icindeki personelId propertydir private int personelId'den gelir
+    	onun altindaki column ise column olucak adidir. -->
+    	
+    	<id name="personelId" type="int" >
+    		<column name="ID" not-null= "true"/>
+    		<generator class="identity"/>
+    	</id>
+    	
+    	<property name="personelName" type="java.lang.String">
+    		<column name="name" not-null="true" length="50"/>
+    	</property>
+    	
+    	<property name="personelSurname" type="java.lang.String">
+    		<column name="Surname" not-null="true" length="50"/>
+    	</property>
+    	
+    	<property name="personelEmail" type="java.lang.String">
+    		<column name="Email" not-null="true" length="50"/>
+    	</property>
+    	
+    		
+    </class>
+	</hibernate-mapping>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

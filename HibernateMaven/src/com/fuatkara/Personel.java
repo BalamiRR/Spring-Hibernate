@@ -13,12 +13,14 @@ public class Personel {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	//@Column(name = "ID", nullable = false) Boyle yapinc acalismiyor cunku daha onceden urettim name degistiremem
+	@Column(nullable = false)
 	private int personelId;
 	
-	@Column(name ="personelName")
+	@Column(name ="personelName", nullable= false, length = 50)
 	private String personelName;
 	
-	@Column(name = "personelSurname")
+	@Column(name = "personelSurname", nullable = false, length = 50)
 	private String personelSurname;
 	
 	@Column(name = "eposta")

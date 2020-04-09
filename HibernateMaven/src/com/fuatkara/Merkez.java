@@ -11,8 +11,9 @@ public class Merkez {
 		
 		personel.setPersonelName("Balamir");
 		personel.setPersonelSurname("Kara");
-		personel.setPersonelEmail("xfg.com");
+		personel.setPersonelEmail("xf");
 		
+		//--------------------------------------------------
 		SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();
