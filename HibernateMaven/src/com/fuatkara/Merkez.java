@@ -9,11 +9,10 @@ public class Merkez {
 		
 		Personel personel = new Personel();
 		
-		personel.setPersonelName("Fuat");
+		personel.setPersonelName("Balamir");
 		personel.setPersonelSurname("Kara");
-		personel.setPersonelEmail("abbbb");
+		personel.setPersonelEmail("xfg.com");
 		
-		//--------------------------------------------------
 		SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();
