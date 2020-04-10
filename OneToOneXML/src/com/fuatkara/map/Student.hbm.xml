@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.fuatkara.Student" table="Student">
+
+		<!-- id'nin icindeki personelId propertydir private int personelId'den 
+			gelir onun altindaki column ise column olucak adidir. <id name="studentId" 
+			type="java.lang.Integer" unique="true"> -->
+
+		<id name="studentId" type="java.lang.Integer">
+			<column name="Student_Id" not-null="true" />
+			<generator class="identity" />
+		</id>
+
+		<property name="studentName" type="java.lang.String">
+			<column name="Student_Name" not-null="true" length="50" />
+		</property>
+
+		<property name="studentSurname" type="java.lang.String">
+			<column name="Student_Surname" not-null="true" length="50" />
+		</property>
+
+		<property name="studentInfo" type="java.lang.String">
+			<column name="Student_INFO" not-null="true" length="50" />
+		</property>
+
+		<!-- cascade=save demek yani yukaridaki bilgiler kaydedilirken, buda kendini 
+			kayit ettiriyor.Yani birbirne baglaniyor. cascade="save" veya cascade="save-update" 
+			olarakta yazabiliriz, hem kaydederken hem de guncellerken. 
+			
+		private Student studentInfo => Student classin icindeki -->
+		<one-to-one name="studentInfo"
+			class="com.fuatkara.StudentInfo" cascade="save-update">
+		</one-to-one>
+
+	</class>
+</hibernate-mapping>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
