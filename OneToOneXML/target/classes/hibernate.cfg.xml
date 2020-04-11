@@ -32,6 +32,7 @@
 		<!-- Bu ise XML le yapicagimiz zaman actif edicez. -->
 		<mapping resource="com/fuatkara/map/Student.hbm.xml"/>
 		<mapping resource="com/fuatkara/map/StudentInfo.hbm.xml"/>
+
     </session-factory>
 
 </hibernate-configuration>

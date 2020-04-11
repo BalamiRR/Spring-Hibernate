@@ -1,4 +1,5 @@
 package com.fuatkara.map;
+
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 

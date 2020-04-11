@@ -1,12 +1,14 @@
-	package com.fuatkara.map;
+package com.fuatkara.map;
 
 import java.io.Serializable;
 
 public class StudentInfo implements Serializable{
+	/**
+	 * 
+	 */
 	private static final long serialVersionUID = 1L;
 
 	private Integer studentId;
-	
 	private String adres;
 	private String mail;
 	private Student student;
@@ -54,10 +56,5 @@ public class StudentInfo implements Serializable{
 	public void setStudent(Student student) {
 		this.student = student;
 	}
-
-	@Override
-	public String toString() {
-		return "StudentInfo [studentId=" + studentId + ", adres=" + adres + ", mail=" + mail + ", student=" + student
-				+ "]";
-	}
+	 
 }

@@ -32,13 +32,3 @@
 			</one-to-one>
 	</class>
 </hibernate-mapping>
-
-
-
-
-
-
-
-
-
-
