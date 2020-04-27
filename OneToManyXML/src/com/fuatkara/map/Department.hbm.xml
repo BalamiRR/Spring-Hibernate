@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+    
+    <hibernate-mapping> 
+    <class name="com.fuatkara.map.Department" table="department" catalog="testdb">
+    	
+    	<!-- Foreign Key Yapma -->
+    	<id name="departmentId">
+    		<column name="Department_Id"/>
+    		<generator class="native">
+    		</generator>
+    	</id>
+    	
+    	<property name="departmentName" >
+    		<column name="Department_Name" length="50"/>
+    	</property>
+    	
+    	<!-- cascade=save demek yani yukaridaki bilgiler kaydedilirken, 
+    	buda kendini kayit ettiriyor.Yani birbirne baglaniyor.
+    	cascade="save"  veya cascade="save-update" olarakta yazabiliriz,
+    	 hem kaydederken hem de guncellerken. -->
+    	
+    	<set name="employees" table="employee" inverse="true" lazy="true" fetch="select">
+    		<key>
+    			<column name= "department_id" not-null="true"/><!-- Employee.hbm.xml icindeki komut buraya yaz -->
+    		</key>
+    		<one-to-many class="com.fuatkara.map.Employee"/><!-- Ve oldugu konum referans ediyor diye siniftan -->
+    	</set>
+    	
+    </class>
+</hibernate-mapping>
+	

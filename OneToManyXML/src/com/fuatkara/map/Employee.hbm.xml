@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.fuatkara.map.Employee" table="employee" catalog="testdb">
+
+		<!-- id'nin icindeki personelId propertydir private int personelId'den 
+			gelir onun altindaki column ise column olucak adidir. <id name="studentId" 
+			type="java.lang.Integer" unique="true"> -->
+
+		<id name="employeeId">
+			<column name="Employee_Id"/>
+			<generator class="native"/>
+			<!-- Coklu yerlerde native olur -->
+		</id>
+
+		<!-- <property name="employeeName" column="Employee_Name"/> Seklindede yazabilirdik.-->
+
+		<property name="employeeName" >
+			<column name="Employee_Name" length="50" />
+		</property>
+
+		<property name="employeeSurname" >
+			<column name="Employee_Surname"  length="50" />
+		</property>
+
+		<!-- cascade=save demek yani yukaridaki bilgiler kaydedilirken, buda kendini 
+			kayit ettiriyor.Yani birbirne baglaniyor. cascade="save" veya cascade="save-update" 
+			olarakta yazabiliriz, hem kaydederken hem de guncellerken. 
+			
+		private Student studentInfo => Student classin icindeki 
+		
+		Employee cok olabilir fakat department bi tane	-->
+		<many-to-one name="department" class="com.fuatkara.map.Department" fetch="select">
+			<column name="department_Id" not-null="true"></column>
+		</many-to-one>
+	</class>
+</hibernate-mapping>
