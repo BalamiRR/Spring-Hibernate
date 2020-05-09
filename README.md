@@ -1,5 +1,5 @@
-# Hibernate-PostgreSQL
-Spring-Hibernate- PostgreSQL database connection
+# Hibernate-PostgreSQL- MYSQL
+Spring-Hibernate / PostgreSQL-MySQL database connection
 
 
 ===============================
