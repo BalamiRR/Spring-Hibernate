@@ -1,4 +1,4 @@
-# Hibernate-PostgreSQL- MYSQL
+# Hibernate-PostgreSQL- MySQL
 Spring-Hibernate / PostgreSQL-MySQL database connection
 
 
