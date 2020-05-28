@@ -6,8 +6,9 @@ In this repository, One-to-One, One-to-Many, Many-to-One and Many-to-Many relati
 ===============================
 
 ### BalamiRR/Hibernate-PostgreSQL/HibernateMySQL
-
-You can also find simple MySQL connection using Hibernate in this repository.
+ |
+ V
+Simple MySQL connection using Hibernate in this repository.
 Creating, Reading, Querying, Updating, Deleting objects and viewing hibernate SQL parameter values. (CRUD)
 
 
