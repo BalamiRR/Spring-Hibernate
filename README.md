@@ -7,15 +7,15 @@ Includes below:
 
 ===============================
 
-#### One To One Classes
+## One To One Classes
 
   ![alt text](./OneToOne.png)
   
-#### One To Many Classes
+## One To Many Classes
 
   ![alt text](./OneToMany.png)
   
-#### Many To Many Classes
+## Many To Many Classes
 
   ![alt text](./ManyToMany.png)
 
