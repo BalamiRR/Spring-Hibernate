@@ -5,10 +5,6 @@ In this repository, One-to-One, One-to-Many, Many-to-One and Many-to-Many relati
 
 Includes below:
 
-     |
-     |
-    \ /
-     V
      
      
 ## One To One Classes
