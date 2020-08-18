@@ -25,7 +25,7 @@ Includes below:
 ### BalamiRR/Hibernate-PostgreSQL/HibernateMySQL
 
 Simple MySQL connection using Hibernate in this repository.
-Creating, Reading, Querying, Updating, Deleting objects and viewing hibernate SQL parameter values. (CRUD)
+Creating, Reading, Querying, Updating, Deleting objects and viewing hibernate SQL parameter values. (CRUD))
 
 
 
