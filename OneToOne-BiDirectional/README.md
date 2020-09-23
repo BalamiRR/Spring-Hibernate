@@ -1,7 +1,7 @@
 #  Hibernate - One to One - CRUD - MySQL
 
 
-:fallen_leaf:  :leaves: This project was done using these classes in the image. :leaves: :fallen_leaf:
+:fallen_leaf:  :leaves: This project was done using these classes in the image. :leaves: :fallen_leaf: 
 
 In this project you can find two examples of classes. One of them is Bi-Directional and the other one is about Bi-Directional deleting a person.
 
